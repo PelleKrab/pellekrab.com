@@ -28,7 +28,7 @@ function createStars() {
     if (validPosition) {
       star.style.left = `${star.x}px`;
       star.style.top = `${star.y}px`;
-      star.style.animationDelay = `${Math.random() * 3}s`; 
+      star.style.animationDelay = `${Math.random() * 3}s`;
       starContainer.appendChild(star);
       stars.push(star);
     }
