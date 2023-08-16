@@ -4,28 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap">
-
   <link rel="stylesheet" href="style.css">
-  <title>Linux Terminal Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>Starry Night Sky</title>
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="name-container">
-      <span id="typed-name"></span><span id="cursor">_</span>
+  <div class="starry-sky">
+    <!-- Stars are generated dynamically using JavaScript -->
+  </div>
+  <div class="intro">
+    
+  </div>
+  <aside class="info-container">
+    <img class="profile-pic" src="/images/pfp.png" alt="Profile Picture">
+    <div class="name">Pelle Krabbenhoeft</div>
+    <div class="catch-phrase">Blockchain, Cybersecuriy, and Robotics</div>
+    <div>
+      <a class="icon" href="https://www.linkedin.com/in/pelle-krabbenhoeft-602b3427a" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="icon" href="https://github.com/PelleKrab" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="icon" href="mailto:pellekrab.1440g@passmail.net">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Rest of your website content goes here -->
-
-  <script src="script.js"></script>
+  </aside>
+  <script src="parallax.js"></script>
 </body>
 
 </html>
