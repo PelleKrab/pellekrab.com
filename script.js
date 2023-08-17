@@ -3,6 +3,7 @@ const minStarDistance = 5; // Minimum distance between stars
 const starContainer = document.querySelector('.starry-sky');
 const stars = [];
 
+
 function calculateDistance(star1, star2) {
   const dx = star1.x - star2.x;
   const dy = star1.y - star2.y;
