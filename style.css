@@ -73,7 +73,7 @@ p {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   width: 100%; 
   max-width: 1000px; 
-  margin-top: 60%;
+  margin-top: 30%;
   margin-bottom: 70%;
 }
 .profile-pic {
@@ -90,6 +90,7 @@ p {
   font-family: 'Courier Prime', monospace;
   font-size: 18px;
   margin: 5px 0;
+  white-space: pre-line;
 }
 .icon {
   margin: 0 5px;
@@ -132,27 +133,29 @@ p {
   transform: translateY(-5px);
 }
 
-.projects article {
+.project-entry article {
   flex: 2;
   padding-right: 20px;
 }
 
-.projects article h2 {
+.project-entry h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.projects article em {
+.project-entry em {
   display: block;
   font-style: italic;
   margin-bottom: 10px;
 }
 
-.projects article p {
+.project-entry p {
+  padding-left: 2em;
   margin-bottom: 10px;
+  white-space: pre-line;
 }
 
-.projects aside {
+.project-entry aside {
   flex: 1;
 }
 
