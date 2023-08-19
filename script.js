@@ -15,7 +15,7 @@ function createStars() {
     const star = document.createElement('div');
     star.classList.add('star');
     star.x = Math.random() * window.innerWidth;
-    star.y = Math.random() * window.innerHeight *1.5;
+    star.y = Math.random() * window.innerHeight *2;
 
     let validPosition = true;
     for (const existingStar of stars) {
