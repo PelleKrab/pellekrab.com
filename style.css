@@ -241,8 +241,11 @@ p {
 
 .article-content ul, .article-content ol {
   font-size: 1.5vw; 
+  margin-bottom: 2%;
   margin-left: 3%; 
 }
+
+
 
 /* Webkit (Chrome, Safari) Scrollbar Styles */
 body::-webkit-scrollbar {
