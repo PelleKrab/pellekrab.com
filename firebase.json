@@ -8,8 +8,32 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/frc-framework",
+        "destination": "/FRC_framework.html"
+      },
+      {
+        "source": "/404",
+        "destination": "/404.html"
+      },
+      {
+        "source": "/frc-rapid-react",
+        "destination": "/FRC_rapid_react.html"
+      },
+      {
+        "source": "/multiplayer-space-shooter",
+        "destination": "/multiplayer_space_shooter.html"
+      },
+      {
+        "source": "/rust-blockchain",
+        "destination": "/rust_blockchain.html"
       }
     ]
   }
