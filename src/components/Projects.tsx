@@ -1,38 +1,12 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import Nav from './Nav'
 import ProjectEntry from './ProjectEntry'
 
 const Projects: React.FC = () => {
-  const navigate = useNavigate()
-
   return (
     <div className="container">
       <div className="header">
         <h1 className="profile-name">Pelle Krabbenhöft</h1>
-        
-        <nav style={{ display: 'flex', gap: '24px', fontSize: '14px', marginBottom: '24px' }}>
-          <button
-            onClick={() => navigate('/')}
-            style={{
-              textDecoration: 'underline',
-              opacity: 0.6,
-              fontWeight: 400
-            }}
-          >
-            home
-          </button>
-          <button
-            onClick={() => navigate('/projects')}
-            style={{
-              textDecoration: 'underline',
-              opacity: 1,
-              fontWeight: 600
-            }}
-          >
-            projects
-          </button>
-        </nav>
-
+        <Nav />
         <p className="projects-subtitle">An incomplete collection of things I've worked on</p>
       </div>
 

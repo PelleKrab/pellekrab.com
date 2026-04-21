@@ -1,39 +1,20 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import headshot from '../assets/images/headshot.jpg'
+import Image from 'next/image'
+import Link from 'next/link'
+import Nav from './Nav'
 
 const About: React.FC = () => {
-  const navigate = useNavigate()
-
   return (
     <div className="container">
       <div className="header">
         <h1 className="profile-name">Pelle Krabbenhöft</h1>
-        
-        <nav style={{ display: 'flex', gap: '24px', fontSize: '14px', marginBottom: '24px' }}>
-          <button
-            onClick={() => navigate('/')}
-            style={{
-              textDecoration: 'underline',
-              opacity: 1,
-              fontWeight: 600
-            }}
-          >
-            home
-          </button>
-          <button
-            onClick={() => navigate('/projects')}
-            style={{
-              textDecoration: 'underline',
-              opacity: 0.6,
-              fontWeight: 400
-            }}
-          >
-            projects
-          </button>
-        </nav>
-
-        <img src={headshot} alt="Pelle" className="profile-image-about" />
+        <Nav />
+        <Image
+          src="/images/headshot.jpg"
+          alt="Pelle"
+          width={140}
+          height={140}
+          className="profile-image-about"
+        />
         <p className="profile-title">dev, hacker, pilot</p>
       </div>
 
@@ -49,7 +30,7 @@ const About: React.FC = () => {
       <section className="section">
         <h2 className="section-title">what i'm doing</h2>
         <ul style={{ fontSize: '15px', marginTop: '12px', paddingLeft: '20px' }}>
-          <li style={{ marginBottom: '8px' }}>getting <a href="/focil-in-reth">FOCIL</a> to mainnet</li>
+          <li style={{ marginBottom: '8px' }}>getting <Link href="/focil-in-reth">FOCIL</Link> to mainnet</li>
           <li style={{ marginBottom: '8px' }}>messing around in <a href="https://github.com/rust-osdev/uefi-rs" target="_blank" rel="noopener noreferrer">UEFI-rs</a></li>
           <li style={{ marginBottom: '8px' }}>learning german</li>
           <li style={{ marginBottom: '8px' }}>climbing rocks and sliding down mountains</li>
@@ -59,7 +40,7 @@ const About: React.FC = () => {
       <section className="section">
         <h2 className="section-title">what i've done</h2>
         <ul style={{ fontSize: '15px', marginTop: '12px', paddingLeft: '20px' }}>
-          <li style={{ marginBottom: '8px' }}>prototyped <a href="/focil-in-reth">FOCIL for Reth</a></li>
+          <li style={{ marginBottom: '8px' }}>prototyped <Link href="/focil-in-reth">FOCIL for Reth</Link></li>
           <li style={{ marginBottom: '8px' }}>messed around with <a href="https://www.microsoft.com/en-us/security/blog/2020/11/17/meet-the-microsoft-pluton-processor-the-security-chip-designed-for-the-future-of-windows-pcs/" target="_blank" rel="noopener noreferrer">Pluton chips</a> at Microsoft</li>
           <li style={{ marginBottom: '8px' }}>built out and ran CU Blockchain Club</li>
           <li style={{ marginBottom: '8px' }}>hackathons and fullstack work</li>

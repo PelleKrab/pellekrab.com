@@ -1,6 +1,5 @@
-import React from 'react'
+import Image from 'next/image'
 import ProjectPage from './ProjectPage'
-import chart from '../assets/images/proposer_data.png'
 
 const CommitBoostCharon: React.FC = () => {
   return (
@@ -67,8 +66,14 @@ const CommitBoostCharon: React.FC = () => {
       <p>
         After setting up the 125 nodes and making Commit-Boost more resilient, I let the node run for about 15 days: 10 days with Commit-Boost and 5 days with MEV-Boost as a control. After vibe-coding some parsers and making sure they worked, I compiled the data into statistical analysis.
       </p>
-      
-      <img src={chart} alt="Commit-Boost vs MEV-Boost proposer slot statistics" style={{ width: '100%', maxWidth: '100%' }} />
+
+      <Image
+        src="/images/proposer_data.png"
+        alt="Commit-Boost vs MEV-Boost proposer slot statistics"
+        width={700}
+        height={400}
+        style={{ width: '100%', height: 'auto' }}
+      />
       <p style={{ fontSize: '13px', color: '#888', textAlign: 'center', marginTop: '-8px' }}>Figure 1: Commit-Boost vs MEV-Boost proposer slot statistics</p>
 
       <p>
@@ -101,7 +106,7 @@ const CommitBoostCharon: React.FC = () => {
         <li><strong>CPU:</strong> AMD Ryzen 7 2700X (16 threads) @ 3.70GHz</li>
         <li><strong>Memory:</strong> 32,042 MiB</li>
         <li><strong>Storage:</strong> Samsung SSD 860 1TB</li>
-        <li><strong>Scripts & Setup:</strong> <a href="https://github.com/PelleKrab/CSCI-4240-Final-Project">GitHub Repository</a></li>
+        <li><strong>Scripts &amp; Setup:</strong> <a href="https://github.com/PelleKrab/CSCI-4240-Final-Project">GitHub Repository</a></li>
       </ul>
 
       <h2>Sources</h2>

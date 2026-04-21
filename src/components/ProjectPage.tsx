@@ -1,5 +1,4 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import Link from 'next/link'
 
 interface ProjectPageProps {
   title: string
@@ -8,11 +7,9 @@ interface ProjectPageProps {
 }
 
 const ProjectPage: React.FC<ProjectPageProps> = ({ title, subtitle, children }) => {
-  const navigate = useNavigate()
-
   return (
     <div className="project-page">
-      <button className="back-button" onClick={() => navigate('/projects')}>← back to projects</button>
+      <Link href="/projects" className="back-link">← back to projects</Link>
       <div className="project-header">
         <h1>{title}</h1>
         {subtitle && <p>{subtitle}</p>}

@@ -1,5 +1,4 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import Link from 'next/link'
 
 interface ProjectEntryProps {
   href: string
@@ -9,17 +8,12 @@ interface ProjectEntryProps {
 }
 
 const ProjectEntry: React.FC<ProjectEntryProps> = ({ href, title, description, technologies }) => {
-  const navigate = useNavigate()
-
   return (
-    <div
-      className="project-entry"
-      onClick={() => navigate(href)}
-    >
+    <Link href={href} className="project-entry">
       <h3 className="project-title">{title}</h3>
       <p className="project-description">{description}</p>
       <p className="project-tech">{technologies}</p>
-    </div>
+    </Link>
   )
 }
 

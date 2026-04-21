@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectPage from './ProjectPage'
 
 const ECOBitesBSWHackathon: React.FC = () => {

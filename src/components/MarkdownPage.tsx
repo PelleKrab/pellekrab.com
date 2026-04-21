@@ -1,11 +1,10 @@
-import React from 'react'
+'use client'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import rehypeRaw from 'rehype-raw'
 import rehypeKatex from 'rehype-katex'
-import { useNavigate } from 'react-router-dom'
-import 'katex/dist/katex.min.css'
+import Link from 'next/link'
 
 interface MarkdownPageProps {
   content: string
@@ -20,13 +19,15 @@ const components = {
 }
 
 const MarkdownPage: React.FC<MarkdownPageProps> = ({ content }) => {
-  const navigate = useNavigate()
-
   return (
     <div className="project-page">
-      <button className="back-button" onClick={() => navigate('/projects')}>← back to projects</button>
+      <Link href="/projects" className="back-link">← back to projects</Link>
       <div className="project-content">
-        <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeRaw, rehypeKatex]} components={components}>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[rehypeRaw, rehypeKatex]}
+          components={components}
+        >
           {content}
         </ReactMarkdown>
       </div>
