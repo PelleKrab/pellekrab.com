@@ -40,9 +40,9 @@ const Projects: React.FC = () => {
         <div className="project-list">
           <ProjectEntry
             href="/focil-censorship-metrics"
-            title="Ethereum FOCIL Inclusion List Analysis: Bandwidth and Censorship Metrics (2025)"
-            description="A data study quantifying IL redundancy and bandwidth trade-offs across top-fee and censorship-only building strategies, using 699K blocks of BlockNative mempool data."
-            technologies="Python, BlockNative, Ethereum"
+            title="FOCIL IL Building Analysis (2026)"
+            description="A research paper analyzing bandwidth and censorship metrics for FOCIL Inclusion List building strategies using BlockNative mempool data."
+            technologies="Xatu, Python, Ethereum"
           />
           <ProjectEntry
             href="/focil-in-reth"
